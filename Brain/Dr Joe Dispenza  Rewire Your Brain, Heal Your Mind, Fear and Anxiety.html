@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Change Yourself: Emotions, the Brain, and Meditation – Study Summary</title>
+<style>
+/* ===== COLOR SYSTEM (CSS variables) ===== */
+:root{
+  --bg:#f3f5f9; --card:#ffffff; --text:#1b2433; --muted:#4a5568; --border:#d9dfe9;
+  --blue:#1d4ed8; --blue-bg:#e3eeff;
+  --green-bg:#e4f6e8; --amber-bg:#fff4d1; --purple-bg:#efe6fb; --teal-bg:#d9f3f1;
+  --red-bg:#fde4e4; --orange-bg:#ffe9d6; --pink-bg:#fde6f0; --indigo-bg:#e6e8fb;
+  --recap-bg:#12203a; --recap-text:#ffffff;
+  --a1:#1d4ed8; --a2:#0f766e; --a3:#7e22ce; --a4:#b45309; --a5:#be123c; --a6:#4d7c0f; --a7:#0369a1; --a8:#a21caf; --a9:#c2410c; --a10:#4338ca;
+  --shadow:0 2px 8px rgba(20,30,60,.08);
+}
+:root[data-theme="dark"]{
+  --bg:#0e1420; --card:#17202f; --text:#e8edf6; --muted:#b4bfd1; --border:#2b3850;
+  --blue:#8ab4ff; --blue-bg:#1b2c4d;
+  --green-bg:#173525; --amber-bg:#40330f; --purple-bg:#2f2147; --teal-bg:#12393a;
+  --red-bg:#43191c; --orange-bg:#44280f; --pink-bg:#451a30; --indigo-bg:#23274f;
+  --recap-bg:#050b16; --recap-text:#ffffff;
+  --a1:#8ab4ff; --a2:#4fd1c5; --a3:#c9a0ff; --a4:#f6ad55; --a5:#fb7185; --a6:#a3e635; --a7:#63b3ed; --a8:#f0abfc; --a9:#fb923c; --a10:#a5b4fc;
+  --shadow:0 2px 8px rgba(0,0,0,.4);
+}
+/* ===== BASE ===== */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;background:var(--bg);color:var(--text);font:clamp(1rem,.95rem + .25vw,1.125rem)/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--blue)}
+h1,h2,h3,h4{line-height:1.25;margin:0 0 .6rem}
+ul,ol{margin:.3rem 0;padding-left:1.4rem}
+li{margin:.3rem 0}
+button{font:inherit;cursor:pointer;min-height:2.75rem;padding:.5rem 1rem;border-radius:.6rem;border:1px solid var(--border);background:var(--card);color:var(--text);transition:transform .15s,box-shadow .15s,background .15s}
+button:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+/* ===== PROGRESS BAR ===== */
+#progress{position:fixed;top:0;left:0;height:5px;width:0;background:var(--blue);z-index:100}
+/* ===== HEADER ===== */
+header.site{background:linear-gradient(135deg,var(--blue-bg),var(--card));border-bottom:1px solid var(--border);padding:clamp(1.25rem,4vw,2.5rem) clamp(1rem,4vw,2rem)}
+header.site .inner{max-width:1160px;margin:auto}
+header.site .tag{margin:0 0 .4rem;color:var(--muted);font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+header.site h1{font-size:clamp(1.6rem,4vw,2.5rem);color:var(--blue)}
+header.site p.one{margin:.5rem 0 1rem;font-size:1.1em}
+.tools{display:flex;flex-wrap:wrap;gap:.6rem}
+/* ===== LAYOUT ===== */
+.layout{display:grid;grid-template-columns:1fr;gap:1rem;max-width:1160px;margin:auto;padding:1rem}
+nav.toc{background:var(--card);border:1px solid var(--border);border-radius:.8rem;box-shadow:var(--shadow);padding:.75rem}
+nav.toc .toggle{width:100%;text-align:left;font-weight:700}
+nav.toc .list{display:none;margin-top:.5rem}
+nav.toc.open .list{display:block}
+nav.toc ol,nav.toc ul{list-style:none;padding:0;margin:0}
+nav.toc ul{padding-left:1rem;font-size:.95em}
+nav.toc a{display:block;padding:.45rem .6rem;border-radius:.4rem;text-decoration:none;color:var(--text);transition:background .15s}
+nav.toc a:hover,nav.toc a.active{background:var(--blue-bg);color:var(--blue)}
+main{min-width:0}
+/* ===== CARDS ===== */
+.card{background:var(--card);border:1px solid var(--border);border-left:8px solid var(--accent,var(--blue));border-radius:.8rem;box-shadow:var(--shadow);padding:clamp(1rem,3vw,1.75rem);margin:0 0 1.25rem;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 6px 18px rgba(20,30,60,.14)}
+.card>h2,.card>h3{color:var(--accent,var(--blue))}
+.group>h2{color:var(--blue);margin:1.5rem 0 1rem}
+.c1{--accent:var(--a1)}.c2{--accent:var(--a2)}.c3{--accent:var(--a3)}.c4{--accent:var(--a4)}.c5{--accent:var(--a5)}.c6{--accent:var(--a6)}.c7{--accent:var(--a7)}.c8{--accent:var(--a8)}.c9{--accent:var(--a9)}.c10{--accent:var(--a10)}
+/* ===== CONTENT BLOCKS ===== */
+.block{border-radius:.6rem;padding:.8rem 1rem;margin:.8rem 0}
+.block h4{margin:0 0 .3rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+.block p{margin:.2rem 0}
+.core{background:var(--blue-bg)}
+.key{background:var(--green-bg)}
+.example{background:var(--amber-bg)}
+.why{background:var(--purple-bg)}
+.note{background:var(--amber-bg)}
+.mistakes{background:var(--red-bg)}
+.memory{background:var(--orange-bg)}
+.actions{background:var(--indigo-bg)}
+.mnemonic{font-size:1.2em;font-weight:700;margin:.2rem 0}
+/* ===== GLOSSARY ===== */
+dl.glossary{display:grid;grid-template-columns:1fr;gap:.5rem;margin:0;background:var(--teal-bg);border-radius:.6rem;padding:1rem}
+dl.glossary dt{font-weight:700;margin-top:.5rem}
+dl.glossary dd{margin:0}
+/* ===== STEPS ===== */
+ol.steps{list-style:none;padding:0;margin:.5rem 0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:.2rem 0 1.2rem 3.4rem;margin:0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700}
+[data-theme="dark"] ol.steps li::before{color:#0e1420}
+ol.steps li::after{content:"";position:absolute;left:1.15rem;top:2.5rem;bottom:.1rem;width:3px;background:var(--accent);opacity:.45}
+ol.steps li:last-child{padding-bottom:0}
+ol.steps li:last-child::after{display:none}
+/* ===== RECALL ===== */
+.recall-wrap{background:var(--pink-bg);border-radius:.6rem;padding:.8rem}
+details.q{background:var(--card);border:1px solid var(--border);border-radius:.5rem;margin:.5rem 0;transition:box-shadow .15s}
+details.q:hover{box-shadow:var(--shadow)}
+details.q summary{cursor:pointer;padding:.8rem 1rem;font-weight:600;min-height:2.75rem}
+details.q .ans{padding:0 1rem 1rem;border-top:1px dashed var(--border);padding-top:.7rem}
+/* ===== RECAP ===== */
+.recap{background:var(--recap-bg);color:var(--recap-text);border-radius:.9rem;padding:clamp(1.2rem,4vw,2rem);border:2px solid var(--blue);box-shadow:var(--shadow)}
+.recap h2{color:#fff}
+/* ===== BACK TO TOP ===== */
+#top{position:fixed;right:1rem;bottom:1rem;display:none;z-index:50;box-shadow:var(--shadow)}
+#top.show{display:block}
+footer{max-width:1160px;margin:auto;padding:1rem 1rem 2.5rem;color:var(--muted);font-size:.9rem}
+/* ===== TABLET / LAPTOP ===== */
+@media (min-width:768px){
+  .layout{grid-template-columns:260px minmax(0,900px);gap:1.5rem;padding:1.5rem}
+  nav.toc{position:sticky;top:1rem;align-self:start;max-height:calc(100vh - 2rem);overflow:auto}
+  nav.toc .toggle{display:none}
+  nav.toc .list{display:block;margin:0}
+  dl.glossary{grid-template-columns:minmax(10rem,30%) 1fr;column-gap:1.25rem}
+  dl.glossary dt{margin-top:0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* ===== PRINT ===== */
+@media print{
+  .tools,nav.toc,#progress,#top{display:none!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  .layout{display:block;padding:0}
+  .card,.recap{box-shadow:none;break-inside:avoid;border:1px solid #999}
+  .recap{background:#fff;color:#000}.recap h2{color:#000}
+  details.q .ans{display:block}
+}
+</style>
+</head>
+<body>
+<!-- Reading progress bar -->
+<div id="progress" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site" id="top-of-page">
+  <div class="inner">
+    <p class="tag">Study Summary: Dr. Joe Dispenza on Changing Your Mind, Body, and Life</p>
+    <h1>"How to Change Yourself: Emotions, the Brain, and Meditation" (Dr. Joe Dispenza with Raj Shamani)</h1>
+    <p class="one">Dispenza says you can change who you are, and even your health, by learning how your thoughts and feelings work and then practicing new ones daily.</p>
+    <div class="tools">
+      <button id="themeBtn" type="button" aria-pressed="false">🌙 Dark mode</button>
+      <button id="toggleAll" type="button">Expand all questions</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+<!-- ===== TABLE OF CONTENTS ===== -->
+<nav class="toc" id="toc" aria-label="Table of contents">
+  <button class="toggle" id="tocBtn" type="button" aria-expanded="false" aria-controls="tocList">☰ Table of contents</button>
+  <div class="list" id="tocList">
+    <ol>
+      <li><a href="#s1">1. Title and One-Line Summary</a></li>
+      <li><a href="#s2">2. Big Picture</a></li>
+      <li><a href="#s3">3. Main Sections</a>
+        <ul>
+          <li><a href="#a">A. Why we overthink and spiral</a></li>
+          <li><a href="#b">B. How change actually works</a></li>
+          <li><a href="#c">C. Healing the past</a></li>
+          <li><a href="#d">D. A calm brain is a creative brain</a></li>
+          <li><a href="#e">E. Why people stay stuck</a></li>
+          <li><a href="#f">F. Belief, effort, and community</a></li>
+          <li><a href="#g">G. Handling emotions and anger</a></li>
+          <li><a href="#h">H. Gratitude and the day's two doors</a></li>
+          <li><a href="#i">I. Money, abundance, and wholeness</a></li>
+          <li><a href="#j">J. Research and ancient wisdom</a></li>
+        </ul></li>
+      <li><a href="#s4">4. Key Terms Glossary</a></li>
+      <li><a href="#s5">5. Step-by-Step Process</a></li>
+      <li><a href="#s6">6. Common Mistakes or Misconceptions</a></li>
+      <li><a href="#s7">7. Memory Aids</a></li>
+      <li><a href="#s8">8. Active Recall Questions</a></li>
+      <li><a href="#s9">9. Action Items</a></li>
+      <li><a href="#s10">10. 30-Second Recap</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main>
+<!-- ===== 1. TITLE ===== -->
+<section class="card c1" id="s1">
+  <h2>1. Title and One-Line Summary</h2>
+  <p>"How to Change Yourself: Emotions, the Brain, and Meditation" (Dr. Joe Dispenza with Raj Shamani). Dispenza says you can change who you are, and even your health, by learning how your thoughts and feelings work and then practicing new ones daily.</p>
+</section>
+
+<!-- ===== 2. BIG PICTURE ===== -->
+<section class="card c2" id="s2">
+  <h2>2. Big Picture</h2>
+  <p>The host, Raj, starts by admitting he spirals into fear at 3 a.m. even on his best days. Dispenza explains why that happens and what to do instead. He covers fear, past trauma, imagination, gratitude, money, and why most people never change. The video suits anyone feeling stuck or anxious, or curious about meditation.</p>
+  <div class="block note"><h4>My note</h4><p>Many claims (healed tumors, regrown tissue, 7-day biological changes) are Dispenza's own reports. The host doesn't verify them, so treat them as his claims, not proven facts.</p></div>
+</section>
+
+<!-- ===== 3. MAIN SECTIONS ===== -->
+<section class="group" id="s3">
+  <h2>3. Main Sections</h2>
+
+  <article class="card c3" id="a">
+    <h3>A. Why we overthink and spiral</h3>
+    <div class="block core"><h4>Core idea</h4><p>Many people create from lack: they want something they don't have, work hard to get it, then feel better only briefly. The fear then returns as "what if I lose it?" Overthinking narrows your focus and turns on the body's stress response.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>Stress chemicals can become addictive, so people replay fear for a rush.</li>
+      <li>A little fear or agitation is a healthy driver. The trouble starts when it runs your life.</li>
+      <li>Dispenza says that a thought is not necessarily true.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>Raj works harder after every big win because he overthinks. Dispenza says that's fine in small doses but isn't a good ultimate reason to act.</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Fear-driven thinking makes the brain worse and keeps you from the state you really want (wholeness, gratitude, love).</p></div>
+  </article>
+
+  <article class="card c4" id="b">
+    <h3>B. How change actually works</h3>
+    <div class="block core"><h4>Core idea</h4><p>Change has two parts: unlearn the old self, then relearn a new one. Meditation (he says the word means "to become familiar with") is where you notice your habits of thinking, acting, and feeling, then practice new ones.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>A belief is just a thought you keep repeating.</li>
+      <li>"Nerve cells that fire together wire together." Repeat a thought enough times and it becomes automatic.</li>
+      <li>Mental rehearsal: with eyes closed, practice a new behavior. He says the brain can't tell a vividly imagined act from a real one.</li>
+      <li>Do this inner work at the start or end of your day, not mid-struggle.</li>
+      <li>Learn first: understand the what and why, then teach it to someone else so it sticks. Information is for the mind, and experience is for the body.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>Before seeing a hard coworker, rehearse what you won't do and what you will do. Then, when you act that way, you feel something new.</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Positive thinking while you feel terrible doesn't work. Priming the brain beforehand gives you something to use in the moment.</p></div>
+  </article>
+
+  <article class="card c5" id="c">
+    <h3>C. Healing the past: change the emotion, not the story</h3>
+    <div class="block core"><h4>Core idea</h4><p>Dispenza says that understanding why you are the way you are doesn't change you. The emotion left over from an event does the damage. Replaying the memory makes the body relive it 50 to 100 times a day.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>Memory without the emotional charge is called wisdom.</li>
+      <li>He says opening your heart (breathing, gratitude, elevated emotions) calms the heart's rhythm, signals the brain that the event is over, and quiets the amygdala (the survival center).</li>
+      <li>He says this works for Navy SEALs, prisoners, and veterans too.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>He asks trauma survivors for three things: courage, love, and wisdom.</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Analyzing the past can become an excuse not to change. Releasing the emotion frees you to live in the future.</p></div>
+  </article>
+
+  <article class="card c6" id="d">
+    <h3>D. A calm brain is a creative brain</h3>
+    <div class="block core"><h4>Core idea</h4><p>When you're stressed, the brain is in survival mode: focused narrowly on body, things, and time, firing in a scattered way. He says broadening your focus onto space (nothing) and relaxing into your heart makes the brain orderly and creative.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>The default mode network is the brain's predictor. It guesses the future from the past and uses huge energy. Shut it off, and you're present and creative.</li>
+      <li>Fear of a deadline sees the future through the past. Gratitude feels the future before it arrives.</li>
+      <li>He says people can imagine again, even if the imagination has "weakened," once they leave survival mode.</li></ul></div>
+    <div class="block example"><h4>Example (his)</h4><p>You can't dream up a new future "when Tyrannosaurus Rex is chasing you."</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>You can't create something new while predicting more of the same.</p></div>
+  </article>
+
+  <article class="card c7" id="e">
+    <h3>E. Why people stay stuck</h3>
+    <div class="block core"><h4>Core idea</h4><p>Change means leaving the known for the unknown, which feels scary. Many cling to suffering because it is familiar.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>People can be addicted to an emotion (like fear) and use situations to feed it.</li>
+      <li>Some only change when things get "intolerable."</li>
+      <li>He says you can't help someone who isn't ready (a closed mind). He gives advice only when asked.</li>
+      <li>Culture and family shape identity. He says to live as yourself, with kindness. You may need distance from people who trigger the old you. You know you've changed when they no longer push your buttons.</li>
+      <li>Common failures: meditation becomes a routine with no meaning, or you meditate 45 minutes then spend 16 hours stressed and reacting.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>You feel great after meditating, then snap at your mother-in-law. You've defaulted to the old self.</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Practice must show up in daily life, with your eyes open.</p></div>
+  </article>
+
+  <article class="card c8" id="f">
+    <h3>F. Belief, effort, and community</h3>
+    <div class="block core"><h4>Core idea</h4><p>You can only believe in a future you've earned belief in through effort. Belief in yourself comes from showing up even when you doubt.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>He says people who healed never missed a day. It was about effort, not results.</li>
+      <li>When people see others like them succeed, it becomes possible for them too.</li>
+      <li>Many young people say life has no meaning. His answer is community and giving people something to do when challenged.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>A man with a 9.5-inch kidney tumor, after other treatments failed, meditated three times a day. He said it was die or show up for himself. (His account of the outcome: the tumors were gone.)</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Nobody can do it for you, and a community makes the impossible feel possible.</p></div>
+  </article>
+
+  <article class="card c9" id="g">
+    <h3>G. Handling emotions and anger</h3>
+    <div class="block core"><h4>Core idea</h4><p>Don't suppress emotions, but shorten how long they last. A reaction that lasts hours is a mood, months a temperament, years a personality trait.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>When agitated, bring the body back to the present moment, like training an animal. Repeat until it settles.</li>
+      <li>Dispenza says he still reacts but asks "Is this loving to me?", takes a few breaths, and steps away.</li>
+      <li>Giving your attention to what angers you gives away your power.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>Children react and are over it in 10 minutes.</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Holding an emotion keeps you in the past.</p></div>
+  </article>
+
+  <article class="card c10" id="h">
+    <h3>H. Gratitude and the day's two doors</h3>
+    <div class="block core"><h4>Core idea</h4><p>Before sleep and on waking, brain waves are slow, and he says the door to the subconscious is open. What you put in then matters.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>Spend 10-15 minutes before bed feeling gratitude and imagining what you'll be grateful for.</li>
+      <li>He says gratitude boosts immunity by 50%, and contrasts this with scrolling Instagram.</li>
+      <li>Review your day: when did I react? How would I handle it tomorrow?</li>
+      <li>After a few weeks, he says, you notice you react less and opportunities and synchronicities show up.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>People return home and are asked, "What happened to you? Did you get a face lift?"</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>The last and first minutes of the day are a cheap chance to reprogram yourself.</p></div>
+  </article>
+
+  <article class="card c1" id="i">
+    <h3>I. Money, abundance, and wholeness</h3>
+    <div class="block core"><h4>Core idea</h4><p>He says the subconscious often holds a childhood program (like "money is scarce"), so wanting wealth consciously isn't enough. Change the program and abundance follows.</p></div>
+    <div class="block key"><h4>Key points</h4><ul>
+      <li>Mirror neurons mean children copy what they see.</li>
+      <li>Create from wholeness, not lack. This "shortens the distance" between thought and result.</li>
+      <li>Define abundance more broadly: time, freedom, love, opportunities. Focus on opportunity, not money.</li>
+      <li>Abundant people become generous. Mission and duty are stronger motivators than money.</li>
+      <li>He says billionaires and top athletes have told him they're miserable and should turn their discipline inward.</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>A newly rich man gave his diamond necklace to a waiter: "I'll create another."</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>Chasing more from lack never feels like enough.</p></div>
+  </article>
+
+  <article class="card c2" id="j">
+    <h3>J. Research and ancient wisdom</h3>
+    <div class="block core"><h4>Core idea</h4><p>Dispenza says his team's studies show big changes in 7-day retreats. He avoids traditional words (kundalini, chakras) to not lose people.</p></div>
+    <div class="block key"><h4>Key points (his claims)</h4><ul>
+      <li>Most attendees are first-time meditators, and he says about 80% look like advanced meditators by day seven.</li>
+      <li>Reported findings: brain growth in advanced meditators, a quiet default mode network resembling psilocybin, natural painkillers, more efficient cells, and changed breast milk.</li>
+      <li>He says ancient teachings were valid but he wanted a modern language.</li>
+      <li>He believes the world is at a point where we either "implode or evolve."</li></ul></div>
+    <div class="block example"><h4>Example</h4><p>He says one study got 90,000 views against a typical 600-900.</p></div>
+    <div class="block why"><h4>Why it matters</h4><p>He argues people trust what's explained with science.</p></div>
+  </article>
+</section>
+
+<!-- ===== 4. GLOSSARY ===== -->
+<section class="card c3" id="s4">
+  <h2>4. Key Terms Glossary</h2>
+  <dl class="glossary">
+    <dt>Meditation (his meaning)</dt><dd>Becoming familiar with how you think, act, and feel.</dd>
+    <dt>Subconscious / autonomic nervous system</dt><dd>The automatic part of you that runs the body and habits, about 95% of the mind.</dd>
+    <dt>Default mode network</dt><dd>The brain's predictor, which guesses the future from the past.</dd>
+    <dt>Beta</dt><dd>Awake, mind on the outer world. High beta is stress.</dd>
+    <dt>Alpha</dt><dd>Relaxed, imaginative, eyes closed.</dd>
+    <dt>Theta</dt><dd>Body asleep, mind awake. The door to the subconscious is open.</dd>
+    <dt>Delta</dt><dd>Deep sleep and repair.</dd>
+    <dt>Gamma</dt><dd>Super-aware, alert, and relaxed.</dd>
+    <dt>Amygdala</dt><dd>The brain's survival and alarm center.</dd>
+    <dt>Mirror neurons</dt><dd>Cells that make us copy what we see others do.</dd>
+    <dt>Synchronicity</dt><dd>Meaningful coincidences that he says follow inner change.</dd>
+    <dt>Wholeness</dt><dd>Feeling complete, with no sense of lack.</dd>
+  </dl>
+</section>
+
+<!-- ===== 5. STEPS ===== -->
+<section class="card c4" id="s5">
+  <h2>5. Step-by-Step Process (his approach)</h2>
+  <ol class="steps">
+    <li>Learn the information first and understand the what and why.</li>
+    <li>Notice the thoughts, feelings, and habits you want to change.</li>
+    <li>Slow your breathing and settle your body into the present.</li>
+    <li>Shift attention off body, things, and time toward space and your heart.</li>
+    <li>Feel an elevated emotion such as gratitude or love.</li>
+    <li>Rehearse the new behavior and the future you want, eyes closed.</li>
+    <li>Repeat until it becomes automatic.</li>
+    <li>Live it with eyes open, and when you react, return to the present and try again.</li>
+  </ol>
+</section>
+
+<!-- ===== 6. MISTAKES ===== -->
+<section class="card c5" id="s6">
+  <h2>6. Common Mistakes or Misconceptions</h2>
+  <div class="block mistakes"><h4>⚠ Watch out for</h4><ul>
+    <li>Digging into the past to explain yourself.</li>
+    <li>Trying to think positive while feeling terrible.</li>
+    <li>Meditating without understanding why.</li>
+    <li>Meditating for an hour, then living stressed for 16.</li>
+    <li>Giving up on a short try and expecting results by tomorrow.</li>
+    <li>Thinking the past, age, illness, or money disqualifies you.</li>
+    <li>Forcing change on others.</li></ul></div>
+</section>
+
+<!-- ===== 7. MEMORY AIDS ===== -->
+<section class="card c6" id="s7">
+  <h2>7. Memory Aids</h2>
+  <div class="block memory"><h4>Five key takeaways</h4><ol>
+    <li>Fear and overthinking come from lack and stress chemicals.</li>
+    <li>Change the emotion, and the story loses its power.</li>
+    <li>A calm, coherent brain and heart create a new future.</li>
+    <li>Belief is earned through effort, not results.</li>
+    <li>Practice must show up when you're triggered in real life.</li></ol></div>
+  <div class="block memory"><h4>Mnemonic</h4><p class="mnemonic">"Know it, calm it, picture it, feel it, repeat it."</p></div>
+  <div class="block memory"><h4>Mental picture</h4><p>Your mind is a muddy pond stirred by stress. Settle it (breath and heart), and the water clears. Then you can see and plant something new.</p></div>
+</section>
+
+<!-- ===== 8. ACTIVE RECALL ===== -->
+<section class="card c8" id="s8">
+  <h2>8. Active Recall Questions</h2>
+  <div class="recall-wrap">
+    <details class="q"><summary>Why do success and fear often come together?</summary><div class="ans">We create from lack, so the fear returns after each win.</div></details>
+    <details class="q"><summary>What does "meditation" mean here?</summary><div class="ans">To become familiar with how you think, act, and feel.</div></details>
+    <details class="q"><summary>Why doesn't understanding your past change you?</summary><div class="ans">The leftover emotion still keeps the body in the past.</div></details>
+    <details class="q"><summary>What is memory without emotional charge?</summary><div class="ans">Wisdom.</div></details>
+    <details class="q"><summary>How does he say mental rehearsal works?</summary><div class="ans">The brain can't tell vivid imagination from real life, so it wires the new behavior.</div></details>
+    <details class="q"><summary>What does the default mode network do?</summary><div class="ans">It predicts the future from the past and uses a lot of energy.</div></details>
+    <details class="q"><summary>How do you shorten an emotion?</summary><div class="ans">Bring the body back to the present moment, repeatedly, like training an animal.</div></details>
+    <details class="q"><summary>Why do many people fail to change?</summary><div class="ans">They default to the old self, treat meditation as routine, or fear the unknown.</div></details>
+    <details class="q"><summary>Why use the time before sleep?</summary><div class="ans">Slow brain waves open a door to the subconscious.</div></details>
+    <details class="q"><summary>What does he say people really come for?</summary><div class="ans">Wholeness.</div></details>
+  </div>
+</section>
+
+<!-- ===== 9. ACTION ITEMS ===== -->
+<section class="card c10" id="s9">
+  <h2>9. Action Items</h2>
+  <div class="block actions"><ul>
+    <li>Spend 10-15 minutes before bed on gratitude and your imagined future instead of scrolling.</li>
+    <li>Write an hour's worth of answers to: Who do I want to be? What do I want?</li>
+    <li>Rehearse one trigger situation (a person or habit) with eyes closed.</li>
+    <li>When agitated, breathe and ask "Is this loving to me?"</li>
+    <li>Watch how long your reactions last, and try to shorten them.</li>
+    <li>Learn first: read or listen for 20 minutes, then explain it to someone.</li>
+    <li>Define what abundance means to you beyond money.</li></ul></div>
+</section>
+
+<!-- ===== 10. RECAP ===== -->
+<section class="recap" id="s10">
+  <h2>10. 30-Second Recap</h2>
+  <p>Dispenza says fear and overthinking come from creating out of lack, and that stress chemicals can become a habit. To change, understand how the mind works, then calm your body, feel an elevated emotion like gratitude, and rehearse the new you until it's automatic. He says the past stops controlling you when you release its emotion, and a settled brain and heart become creative. Belief is earned by showing up daily, especially when you doubt. Bedtime and waking are the best times to practice, and the real test is staying calm when someone pushes your buttons. His reported results are striking, but they're his claims, so try the practices carefully and don't use them in place of medical care.</p>
+</section>
+</main>
+</div>
+
+<footer>Study Summary: Dr. Joe Dispenza on Changing Your Mind, Body, and Life</footer>
+
+<!-- Back to top button -->
+<button id="top" type="button" aria-label="Back to top">↑ Top</button>
+
+<script>
+/* ===== JAVASCRIPT ===== */
+(function(){
+  var root = document.documentElement;
+
+  /* Dark mode (state kept in memory only) */
+  var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var themeBtn = document.getElementById('themeBtn');
+  function applyTheme(){
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    themeBtn.textContent = dark ? '☀️ Light mode' : '🌙 Dark mode';
+    themeBtn.setAttribute('aria-pressed', dark);
+  }
+  themeBtn.addEventListener('click', function(){ dark = !dark; applyTheme(); });
+  applyTheme();
+
+  /* Expand all / Collapse all recall questions */
+  var qs = document.querySelectorAll('details.q');
+  var allBtn = document.getElementById('toggleAll');
+  var expanded = false;
+  allBtn.addEventListener('click', function(){
+    expanded = !expanded;
+    qs.forEach(function(d){ d.open = expanded; });
+    allBtn.textContent = expanded ? 'Collapse all questions' : 'Expand all questions';
+  });
+
+  /* Mobile collapsible table of contents */
+  var toc = document.getElementById('toc'), tocBtn = document.getElementById('tocBtn');
+  tocBtn.addEventListener('click', function(){
+    var o = toc.classList.toggle('open');
+    tocBtn.setAttribute('aria-expanded', o);
+  });
+  document.querySelectorAll('#tocList a').forEach(function(a){
+    a.addEventListener('click', function(){
+      toc.classList.remove('open'); tocBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* Reading progress bar + back to top + active TOC link */
+  var bar = document.getElementById('progress'), topBtn = document.getElementById('top');
+  var links = Array.prototype.slice.call(document.querySelectorAll('#tocList a'));
+  var targets = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + '%';
+    topBtn.classList.toggle('show', window.scrollY > 600);
+    var cur = -1;
+    targets.forEach(function(t, i){ if(t && t.getBoundingClientRect().top < window.innerHeight * 0.35) cur = i; });
+    links.forEach(function(a, i){ a.classList.toggle('active', i === cur); });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  onScroll();
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+})();
+</script>
+</body>
+</html>
