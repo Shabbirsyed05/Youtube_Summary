@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrew Huberman: Become Mentally Dangerous With These Daily Habits</title>
+<style>
+/* ===== COLOR SYSTEM ===== */
+:root{--bg:#f4f6f8;--card:#fff;--text:#1d2530;--muted:#4a5565;--blue:#1d4ed8;--line:#d5dbe3;
+--core:#e3f0ff;--key:#e4f6e8;--ex:#fff4cc;--why:#efe6fb;--gloss:#dff5f3;--warn:#fde6e6;--mem:#ffe9d6;--recall:#fde7f0;--act:#e5e8fd;--recapbg:#14213d}
+:root[data-theme="dark"]{--bg:#10151c;--card:#1a212b;--text:#e9edf3;--muted:#b5bfcc;--blue:#8db4ff;--line:#33404f;
+--core:#14304f;--key:#163a22;--ex:#43380f;--why:#32214f;--gloss:#0f3a38;--warn:#4a1c1c;--mem:#4a2d12;--recall:#4a1b30;--act:#222a5a;--recapbg:#050b18}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1rem}
+body{margin:0;background:var(--bg);color:var(--text);font:clamp(1rem,.95rem + .3vw,1.1rem)/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--blue)}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--blue);z-index:50}
+/* ===== HEADER ===== */
+header.top{background:var(--recapbg);color:#fff;padding:clamp(1.5rem,4vw,3rem) 1rem;text-align:center}
+header.top h1{margin:0 auto .6rem;max-width:900px;font-size:clamp(1.5rem,1.1rem + 2vw,2.4rem);line-height:1.25}
+header.top h2{margin:0 auto .6rem;max-width:900px;font-size:clamp(1.05rem,1rem + .6vw,1.35rem);color:#dbe4f3}
+header.top p{margin:0 auto;max-width:760px;color:#dbe4f3}
+.tools{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--text);padding:.7rem 1rem;border-radius:.6rem;min-height:2.75rem;transition:transform .15s,box-shadow .15s}
+button:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(0,0,0,.2)}
+/* ===== LAYOUT ===== */
+.layout{display:grid;grid-template-columns:1fr;gap:1rem;max-width:1200px;margin:0 auto;padding:1rem}
+nav.toc{background:var(--card);border:1px solid var(--line);border-radius:.8rem;padding:.5rem 1rem}
+nav.toc summary{font-weight:700;cursor:pointer;padding:.7rem 0;min-height:2.75rem}
+nav.toc ol,nav.toc ul{list-style:none;margin:0;padding:0 0 .5rem}
+nav.toc a{display:block;padding:.45rem .3rem;text-decoration:none;border-radius:.4rem}
+nav.toc a:hover{background:var(--core)}
+nav.toc ul{padding-left:1rem;font-size:.95rem}
+main{min-width:0;max-width:900px}
+/* ===== CARDS ===== */
+section.card{background:var(--card);border:1px solid var(--line);border-left:8px solid var(--a,var(--blue));border-radius:.8rem;padding:clamp(1rem,3vw,1.6rem);margin-bottom:1.2rem;transition:box-shadow .2s}
+section.card:hover{box-shadow:0 6px 18px rgba(0,0,0,.12)}
+section.card>h2,section.card>h3{margin:0 0 .8rem;color:var(--blue);font-size:clamp(1.25rem,1.05rem + 1vw,1.7rem)}
+h2.part{color:var(--blue);margin:1.5rem 0 .8rem;font-size:clamp(1.4rem,1.1rem + 1.2vw,1.9rem)}
+.blk{border-radius:.6rem;padding:.8rem 1rem;margin:.7rem 0;color:#1d2530}
+:root[data-theme="dark"] .blk,:root[data-theme="dark"] details.q{color:#e9edf3}
+.blk h4{margin:0 0 .4rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+.blk p{margin:.3rem 0}.blk ul,.blk ol{margin:.3rem 0;padding-left:1.3rem}
+.core{background:var(--core)}.key{background:var(--key)}.ex{background:var(--ex)}.why{background:var(--why)}.warn{background:var(--warn)}.mem{background:var(--mem)}.act{background:var(--act)}
+/* ===== GLOSSARY ===== */
+dl.gloss{display:grid;grid-template-columns:1fr;gap:.4rem;margin:0;background:var(--gloss);padding:.8rem 1rem;border-radius:.6rem;color:#1d2530}
+:root[data-theme="dark"] dl.gloss{color:#e9edf3}
+dl.gloss dt{font-weight:700;margin-top:.5rem}dl.gloss dd{margin:0}
+@media(min-width:600px){dl.gloss{grid-template-columns:minmax(10rem,30%) 1fr}dl.gloss dt{margin:0;padding:.3rem 0;border-top:1px solid rgba(0,0,0,.12)}dl.gloss dd{padding:.3rem 0;border-top:1px solid rgba(0,0,0,.12)}}
+/* ===== STEPS ===== */
+ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.steps li{position:relative;counter-increment:s;padding:.2rem 0 1.2rem 3.2rem}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-weight:700}
+ol.steps li:not(:last-child)::after{content:"";position:absolute;left:1.05rem;top:2.3rem;bottom:.1rem;width:2px;background:var(--blue);opacity:.5}
+:root[data-theme="dark"] ol.steps li::before{color:#10151c}
+/* ===== RECALL ===== */
+details.q{background:var(--recall);border-radius:.6rem;margin:.5rem 0;padding:.2rem 1rem;color:#1d2530}
+details.q summary{cursor:pointer;font-weight:700;padding:.7rem 0;min-height:2.75rem}
+details.q p{margin:.2rem 0 .8rem}
+/* ===== RECAP ===== */
+section.recap{background:var(--recapbg);color:#fff;border-radius:.8rem;padding:clamp(1.2rem,3vw,2rem);margin:1.2rem 0;border:2px solid var(--blue)}
+section.recap h2{margin-top:0;color:#fff}
+footer{text-align:center;color:var(--muted);padding:1.5rem 1rem 3rem}
+#top{position:fixed;right:1rem;bottom:1rem;display:none;z-index:40;border-radius:50%;width:3rem;height:3rem;padding:0}
+/* ===== TABLET / LAPTOP ===== */
+@media(min-width:768px){
+.layout{grid-template-columns:260px minmax(0,900px);justify-content:center;gap:1.5rem}
+nav.toc{position:sticky;top:1rem;align-self:start;max-height:calc(100vh - 2rem);overflow:auto}
+nav.toc summary{pointer-events:none}}
+/* ===== PRINT ===== */
+@media print{nav.toc,.tools,#bar,#top{display:none!important}body{background:#fff;color:#000}.layout{display:block}section.card,.blk,details.q{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<!-- ===== 1. TITLE AND ONE-LINE SUMMARY ===== -->
+<header class="top" id="title">
+<h1>Andrew Huberman: Become Mentally Dangerous With These Daily Habits</h1>
+<h2>How to Build an Unshakable, High-Performance Mind: Andrew Huberman on Sleep, Stress, Resilience and Long-Term Success</h2>
+<p>A neuroscientist explains how to set up your body clock, learn to switch your mind off, and pace your effort over 10 years so you can perform at a high level without burning out.</p>
+<div class="tools"><button id="theme" type="button">🌙 Dark mode</button><button id="all" type="button">Expand all questions</button></div>
+</header>
+
+<div class="layout">
+<!-- ===== TABLE OF CONTENTS ===== -->
+<nav class="toc" aria-label="Table of contents"><details id="tocd" open><summary>Contents</summary><ol>
+<li><a href="#big">2. Big Picture</a></li>
+<li><a href="#main">3. Main Sections</a><ul>
+<li><a href="#a">A. High morning cortisol, low night cortisol</a></li>
+<li><a href="#b">B. Learning to turn your mind off</a></li>
+<li><a href="#c">C. Left column vs. right column</a></li>
+<li><a href="#d">D. The 10-year plan: three stages</a></li>
+<li><a href="#e">E. Clutch states and learning</a></li>
+<li><a href="#f">F. Fear, freezing and courage</a></li>
+<li><a href="#g">G. Handling criticism, setbacks and the "loser" mindset</a></li>
+<li><a href="#h">H. Other themes</a></li></ul></li>
+<li><a href="#gloss">4. Key Terms Glossary</a></li>
+<li><a href="#steps">5. Step-by-Step: Huberman's Daily Rhythm</a></li>
+<li><a href="#mistakes">6. Common Mistakes or Misconceptions</a></li>
+<li><a href="#memory">7. Memory Aids</a></li>
+<li><a href="#recall">8. Active Recall Questions</a></li>
+<li><a href="#actions">9. Action Items</a></li>
+<li><a href="#recap">10. 30-Second Recap</a></li></ol></details></nav>
+
+<main>
+<!-- ===== 2. BIG PICTURE ===== -->
+<section class="card" id="big" style="--a:#1d4ed8"><h2>2. Big Picture</h2>
+<div class="blk core"><p>This is an interview between Andrew Huberman (Stanford neuroscientist and podcaster) and the host, who appears to be Raj. It is for ambitious people, especially young ones, who get excited by self-improvement content but fade by Thursday. You will learn:</p>
+<ul><li>the daily "cortisol rhythm" habit that sets up energy and sleep</li><li>how to turn your mind off</li><li>a 3-stage plan for building a career</li><li>how to handle fear, criticism, setbacks and technology</li></ul></div></section>
+
+<!-- ===== 3. MAIN SECTIONS ===== -->
+<h2 class="part" id="main">3. Main Sections</h2>
+
+<section class="card" id="a" style="--a:#1d4ed8"><h3>Section A: High morning cortisol, low night cortisol</h3>
+<div class="blk core"><h4>Core idea</h4><p>Cortisol is called the "stress hormone," but its main job is to release energy (glucose and fats) into your body. You want it high early in the day and low at night. Huberman says that if he had only 5 minutes with someone, this is what he would tell them.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li>Get bright light in your eyes within 30-60 minutes of waking. Go outside, look toward the sun (never so bright that it hurts), and avoid sunglasses or brimmed hats. Glasses and contacts are fine.</li>
+<li>Stay out 5-10 minutes. On cloudy days, stay longer.</li>
+<li>Hydrating, caffeine and light exercise also boost morning cortisol.</li>
+<li>Don't stay in bed on your phone.</li>
+<li>No sunlight? Use a 10,000 lux light. Sunlight is better.</li>
+<li>At night: dim the lights, avoid caffeine in the last 8 hours before sleep, and lower your "activation" with long exhales.</li>
+<li>"Morning" means the first 1-2 hours after <em>you</em> wake up, not a fixed clock time.</li>
+<li>A high morning peak helps cortisol return to normal faster after a stressor. A "flat" cortisol curve (medium-high all day) is the bad pattern.</li>
+<li>Huberman mentions ashwagandha, magnesium, theanine and apigenin as late-day sleep aids, but says they have only a trivial effect if your behaviors are wrong. He suggests limiting high-dose ashwagandha to about two weeks on, two weeks off.</li></ul></div>
+<div class="blk ex"><h4>Example (from the video)</h4><p>Cortisol naturally rises in the last third of your sleep and is what wakes you up. Morning light boosts it and trains your body clock, so the next day it rises <em>in anticipation</em>.</p></div>
+<div class="blk why"><h4>Why it matters</h4><p>It leads to more daytime energy and focus, better stress resilience, deeper sleep and better immune function.</p></div></section>
+
+<section class="card" id="b" style="--a:#7c3aed"><h3>Section B: Learning to turn your mind off</h3>
+<div class="blk core"><h4>Core idea</h4><p>Anyone can push hard. The real edge is being able to switch off, especially in the final hour of the day. Huberman says the person who can do this will pull far ahead within 5-10 years.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li><strong>Yoga nidra / NSDR (non-sleep deep rest):</strong> lie down, do long exhales, and focus only on sensation (what you hear and feel) instead of planning or thinking. Do it for 10, 20 or 30 minutes. Free scripts are online.</li>
+<li>Use it first thing in the morning after a short night, or around 2-3 p.m. during a slump. Huberman says it restores energy and can bring pockets of deep sleep.</li>
+<li><strong>Eye movement trick</strong> (for falling back asleep): with eyes closed, move your eyes side to side, then counterclockwise, then clockwise, then look toward your nose (don't cross them), then exhale.</li>
+<li>Practice makes it easier. He says these circuits get stronger with repetition.</li>
+<li>Rest fully or work fully. Don't mix the two. A mind split between two places is the most tiring.</li>
+<li>Have a weekly "reset day" with no exercise and lots of relaxing.</li></ul></div>
+<div class="blk ex"><h4>Example (from the video)</h4><p>The host used NSDR audio in 30-minute gaps between guests and fell asleep "like a baby." He said it gave him more energy than coffee.</p></div>
+<div class="blk why"><h4>Why it matters</h4><p>Sleep and recovery are where your body and mind repair themselves and clear the emotional load of the day.</p></div></section>
+
+<section class="card" id="c" style="--a:#0d9488"><h3>Section C: Left column vs. right column</h3>
+<div class="blk core"><h4>Core idea</h4><p>Much of what we worry about is outside our control. Focus on what you can control.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li>Once a month, write two columns. Left: things that worry you (what people think, what might happen). Right: things you control (exercise, sleep, hydration, calling your mother).</li>
+<li>Notice when your mind drifts left, then pull it right by getting very present (sip water, notice the room).</li>
+<li>Every stressful moment is a chance to practice. Huberman credits the exercise to former Navy SEAL Andy Stumpf.</li></ul></div>
+<div class="blk ex"><h4>Example (from the video)</h4><p>His "dynamic attractor states" idea: a thought is like a ball bearing on a flat surface. The more you think about it, the deeper the trench it sits in. You need something strong (a friend's call, exercise, sleep) to knock it out.</p></div>
+<div class="blk why"><h4>Why it matters</h4><p>You can't remove thoughts, but you can steer them.</p></div></section>
+
+<section class="card" id="d" style="--a:#dc2626"><h3>Section D: The 10-year plan: three stages</h3>
+<div class="blk core"><h4>Core idea</h4><p>Effort should change as you grow.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li><strong>Years 1-3:</strong> Go all in on the gas pedal. Find your edge and your limits. "Don't die," and don't injure yourself or damage your health.</li>
+<li><strong>Years 4-6:</strong> Learn to regulate. Balance effort and recovery. This is when people crack (hair loss, skin issues, autoimmune problems, or crashing).</li>
+<li><strong>Year 7 and beyond:</strong> You are a pro. You know your states and what you need.</li>
+<li>Work per day in "units": think about <em>today</em>, not tomorrow. He can do about 5-10 hours of real work, and 10 hours borrows from the next day.</li>
+<li>Biggest "lie," in his view: that the goal is just a bigger and bigger capacity. The better you get, the more energy deep work uses.</li>
+<li>Take yourself seriously, but that doesn't mean rigid or no fun.</li></ul></div>
+<div class="blk ex"><h4>Example (from the video)</h4><p>In resistance training, beginners need lots of sets. Veterans pour more focus into fewer sets and need more rest.</p></div>
+<div class="blk why"><h4>Why it matters</h4><p>It stops you from burning out early or drifting without ambition.</p></div></section>
+
+<section class="card" id="e" style="--a:#d97706"><h3>Section E: Clutch states and learning</h3>
+<div class="blk core"><h4>Core idea</h4><p>Flow is when you're doing something you've already mastered. A "clutch state" is forcing yourself to work at the edge of friction and effort, which is where learning happens.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li>Learning needs errors. If your nervous system can already do it, there's no rewiring.</li>
+<li>Best way to lock in learning: self-test ("what did I learn?"), then look up what you missed.</li>
+<li>Huberman learned the term "clutch state" the day before from Dr. Tommy Wood.</li></ul></div>
+<div class="blk why"><h4>Why it matters</h4><p>Comfort doesn't build you. The gap between current and desired performance does.</p></div></section>
+
+<section class="card" id="f" style="--a:#2563eb"><h3>Section F: Fear, freezing and courage</h3>
+<div class="blk core"><h4>Core idea</h4><p>People freeze not because they imagine failure, but because the stakes feel too high.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li>He cites a study where, as rewards rise, highly skilled people choke.</li>
+<li><strong>Fix:</strong> lower the stakes and shrink the time horizon. Go all in for three days, not three years. "Chop wood, carry water."</li>
+<li><strong>Courage is built step by step.</strong> Cold showers cause an adrenaline wave. Ride out the first 20-30 seconds. Set "walls": stay until you really want out, then go one more.</li>
+<li>Cold shower is fine, but don't stay longer than 3 minutes, and avoid ice baths that risk hypothermia.</li>
+<li>You must also not be reckless; timing matters.</li></ul></div>
+<div class="blk why"><h4>Why it matters</h4><p>You learn that you can handle your own physiology, which carries over to public speaking and risk-taking.</p></div></section>
+
+<section class="card" id="g" style="--a:#16a34a"><h3>Section G: Handling criticism, setbacks and the "loser" mindset</h3>
+<div class="blk core"><h4>Core idea</h4><p>Both "winners" and "losers" have hard thoughts. The difference is what they do with them.</p></div>
+<div class="blk key"><h4>Key points</h4><ul>
+<li>Losers ruminate and turn pain into self-harm or harming others. Winners transmute it into action that helps themselves and others.</li>
+<li>Sometimes the best action is doing nothing for 5 minutes. Just don't self-attack.</li>
+<li>Shorten the horizon: "Just help me get through the next hour."</li>
+<li>If you are at the very bottom, Huberman says seek help and ask for help from whatever you believe in (he believes in God). He adds that this part isn't science.</li>
+<li>His view on online hate: those who write cruel comments are likely hurting. Send them love and don't let it erode you.</li>
+<li>A secure upbringing (the host's joint family, Huberman's friends and teams) can build thick skin.</li></ul></div></section>
+
+<section class="card" id="h" style="--a:#db2777"><h3>Section H: Other themes</h3>
+<div class="blk key"><ul>
+<li><strong>Success traps:</strong> Money, attention and power can wreck people. Keep people around you who give honest feedback and don't talk behind your back.</li>
+<li><strong>Immigrants:</strong> Huberman suggests they see opportunity where others see the ordinary. We "habituate" to what's around us.</li>
+<li><strong>Technology:</strong> We trade skills for convenience. Use rules (e.g., a phone lock box). Ask: "Am I a consumer or a creator right now?" The host adds: become the producer of what you consume most.</li>
+<li><strong>Love:</strong> Slow down, build friendship first, and don't confuse the "drug" feeling with deep trust.</li>
+<li><strong>Cost of being Huberman:</strong> Intense emotions plus big ambition. He can't connect deeply with everyone.</li></ul></div></section>
+
+<!-- ===== 4. GLOSSARY ===== -->
+<section class="card" id="gloss" style="--a:#0891b2"><h2>4. Key Terms Glossary</h2>
+<dl class="gloss">
+<dt>Cortisol</dt><dd>a hormone that releases energy; high in the morning, it should be low at night.</dd>
+<dt>Melatonin</dt><dd>the "sleep hormone" released in darkness; light suppresses it.</dd>
+<dt>Circadian clock</dt><dd>your body's 24-hour rhythm.</dd>
+<dt>HRV (heart rate variability)</dt><dd>how much your heart rate speeds up and slows down; higher means your "brakes" work well.</dd>
+<dt>Long exhale breathing</dt><dd>a longer out-breath slows your heart rate and calms you.</dd>
+<dt>NSDR / Yoga nidra</dt><dd>guided deep relaxation focused on sensation, not thought.</dd>
+<dt>Proprioception</dt><dd>your sense of where your body is in space.</dd>
+<dt>Neuroplasticity</dt><dd>the brain's ability to rewire with practice.</dd>
+<dt>Clutch state</dt><dd>working at the edge of effort and friction.</dd>
+<dt>Flow state</dt><dd>smooth, easy focus on something you've mastered.</dd></dl></section>
+
+<!-- ===== 5. STEP-BY-STEP ===== -->
+<section class="card" id="steps" style="--a:#1d4ed8"><h2>5. Step-by-Step: Huberman's Daily Rhythm</h2>
+<ol class="steps">
+<li>Wake up. Hydrate; caffeine is fine.</li>
+<li>Within 30-60 minutes, get 5-10 minutes of bright light (outside, or a 10,000 lux light).</li>
+<li>Skip the phone; move your body or exercise if you can.</li>
+<li>Work in focused blocks; use NSDR (10-30 min) if you're tired in the afternoon.</li>
+<li>Avoid caffeine in the last 8 hours before bed.</li>
+<li>In the final hour, dim the lights and do long exhales.</li>
+<li>If you wake at night, use the eye movement trick.</li></ol></section>
+
+<!-- ===== 6. COMMON MISTAKES ===== -->
+<section class="card" id="mistakes" style="--a:#dc2626"><h2>6. Common Mistakes or Misconceptions</h2>
+<div class="blk warn"><ul>
+<li>Believing cortisol is always bad (it's good in the morning).</li>
+<li>"Hustle forever" with no off switch.</li>
+<li>Doing half-work, half-rest (scrolling while feeling guilty).</li>
+<li>Trying to get every protocol perfect.</li>
+<li>Thinking "taking yourself seriously" means no fun.</li>
+<li>Using stimulants or drugs to push without recovery.</li>
+<li>Thinking freezing comes from fear, when it often comes from the stakes feeling too high.</li></ul></div></section>
+
+<!-- ===== 7. MEMORY AIDS ===== -->
+<section class="card" id="memory" style="--a:#ea580c"><h2>7. Memory Aids</h2>
+<div class="blk mem"><h4>5 takeaways</h4><ol>
+<li>Bright morning, dim night.</li>
+<li>Learn to switch off as well as you push.</li>
+<li>Spend time in the right column (what you control).</li>
+<li>Years 1-3 go hard, 4-6 balance, 7+ fine-tune.</li>
+<li>Lower the stakes and shorten the horizon.</li></ol></div>
+<div class="blk mem"><h4>Mnemonic</h4><p><strong>"Light, Lights-out, Learn, Limit"</strong>: morning light, lights out at night, learn at your edge, limit the stakes. <em>(My mnemonic.)</em></p></div>
+<div class="blk mem"><h4>Mental picture</h4><p><em>(My analogy)</em> A Formula 1 car. It needs a strong start, a smart race, and pit stops. Huberman himself uses the F1 image: the car needs care and rest.</p></div></section>
+
+<!-- ===== 8. ACTIVE RECALL ===== -->
+<section class="card" id="recall" style="--a:#db2777"><h2>8. Active Recall Questions</h2>
+<details class="q"><summary>1. What is cortisol's main job?</summary><p>To release glucose and fats for energy, not just handle stress.</p></details>
+<details class="q"><summary>2. Why get morning light?</summary><p>It spikes cortisol (up to ~50%, he says), trains your body clock, and helps lower cortisol later.</p></details>
+<details class="q"><summary>3. How long should you get light?</summary><p>About 5-10 minutes, longer on cloudy days.</p></details>
+<details class="q"><summary>4. What is the eye movement trick, and why does it work?</summary><p>Side to side, circles both ways, look toward the nose, exhale. It disrupts proprioception, which you need to forget to fall asleep.</p></details>
+<details class="q"><summary>5. What are the left and right columns?</summary><p>Left: worries you can't control. Right: actions you can.</p></details>
+<details class="q"><summary>6. What are the three career stages?</summary><p>Years 1-3 all-in, 4-6 regulate, 7+ pro.</p></details>
+<details class="q"><summary>7. Why do people freeze under big stakes?</summary><p>They focus on how good it could go, so the stakes feel overwhelming.</p></details>
+<details class="q"><summary>8. How do you fix freezing?</summary><p>Lower the stakes and shorten the time horizon.</p></details>
+<details class="q"><summary>9. How do you build courage with cold water?</summary><p>Ride out the first 20-30 seconds, then go over "walls" (one more, then another).</p></details>
+<details class="q"><summary>10. What's the difference between flow and clutch states?</summary><p>Flow is mastered ease. Clutch means forcing effort at the edge, where learning happens.</p></details></section>
+
+<!-- ===== 9. ACTION ITEMS ===== -->
+<section class="card" id="actions" style="--a:#4f46e5"><h2>9. Action Items</h2>
+<div class="blk act"><ul>
+<li>Tomorrow: 5-10 minutes of morning light and some water. Phone stays away.</li>
+<li>Tonight: dim lights, no late caffeine, and 3-5 long exhales.</li>
+<li>Try one 10-20 minute NSDR/yoga nidra session this week.</li>
+<li>Write a left/right column list.</li>
+<li>Do a 10-breath meditation before getting out of bed.</li>
+<li>Take a weekly "reset day."</li>
+<li>Self-test after a podcast or book: "What did I learn?"</li>
+<li>Pick one fear and shrink it to "just three days."</li></ul></div></section>
+
+<!-- ===== 10. RECAP ===== -->
+<section class="recap" id="recap"><h2>10. 30-Second Recap</h2>
+<p>Huberman says peak performance starts with your body clock: bright light in the first hour of the day to raise morning cortisol, and dim lights, no late caffeine and calm breathing at night. Learn to switch your mind off with yoga nidra and the eye trick, and keep your focus on what you control (the right column). Build your career in stages: go all in for years 1-3, learn balance in years 4-6, then fine-tune. When fear freezes you, lower the stakes and shrink the time horizon. Be a creator, not just a consumer, and turn hard experiences into action instead of self-attack</p></section>
+</main>
+</div>
+
+<footer><p>Study summary · Read, recall, repeat.</p></footer>
+<button id="top" type="button" aria-label="Back to top">↑</button>
+
+<script>
+/* ===== THEME TOGGLE (memory only) ===== */
+var root=document.documentElement,tb=document.getElementById('theme');
+var dark=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches;
+function applyTheme(){root.setAttribute('data-theme',dark?'dark':'light');tb.textContent=dark?'☀️ Light mode':'🌙 Dark mode';}
+tb.onclick=function(){dark=!dark;applyTheme();};applyTheme();
+/* ===== EXPAND / COLLAPSE ALL ===== */
+var open=false,ab=document.getElementById('all');
+ab.onclick=function(){open=!open;document.querySelectorAll('details.q').forEach(function(d){d.open=open;});ab.textContent=open?'Collapse all questions':'Expand all questions';};
+/* ===== PROGRESS BAR + BACK TO TOP ===== */
+var bar=document.getElementById('bar'),topb=document.getElementById('top');
+function onScroll(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?h.scrollTop/m*100:0)+'%';topb.style.display=h.scrollTop>400?'block':'none';}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+topb.onclick=function(){scrollTo({top:0,behavior:'smooth'});};
+/* ===== TOC: collapsed on mobile, open on laptop ===== */
+var toc=document.getElementById('tocd'),mq=matchMedia('(min-width:768px)');
+function tocState(){toc.open=mq.matches;}tocState();mq.addEventListener('change',tocState);
+document.querySelectorAll('nav.toc a').forEach(function(a){a.addEventListener('click',function(){if(!mq.matches)toc.open=false;});});
+/* ===== PRINT: open all answers ===== */
+addEventListener('beforeprint',function(){document.querySelectorAll('details.q').forEach(function(d){d.open=true;});});
+</script>
+</body>
+</html>
